@@ -6,7 +6,8 @@ struct baby
     int id;
     char  favchar;
 
-};
+}; 
+
 
 int main(){
     struct baby first;

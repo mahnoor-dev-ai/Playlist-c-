@@ -4,6 +4,7 @@ int c=45;
 
 int main()
 { int a,b,c;
+    
     cout<<"enter a value of a:"<<endl;
     cin>>a;
     cout<<"enter a value of b:"<<endl;
@@ -15,3 +16,4 @@ int main()
 
     return 0;
 }
+
