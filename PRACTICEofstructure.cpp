@@ -8,7 +8,7 @@ int marks;
 };
 int main(){
     struct student bio;
-    bio.name="mahnoor"
+    bio.name="mahnoor";
     
     return 0;
 }

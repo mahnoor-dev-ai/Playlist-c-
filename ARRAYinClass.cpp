@@ -28,9 +28,9 @@ void Pizza99 ::displayprice()
         cout << "The price of item with ID " << itemId[i] << "is" << itemprice[i] << endl;
     }
 }
-void Pizza99::initcounter(){
-    counter=0;
-
+void Pizza99::initcounter()
+{
+    counter = 0;
 }
 int main()
 {
