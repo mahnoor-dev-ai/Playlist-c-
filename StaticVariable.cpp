@@ -8,19 +8,15 @@ class employee
 public:
     void setdata(void)
     {
-        cout << "Enter the ID:"<<endl;
+        cout << "Enter the ID:" << endl;
         cin >> id;
         count++;
     }
     void getdata(void)
     {
-        cout << "This is member # "<<count<<" and ID  is: "<<id<<endl;
-       
-    }
-
-    
+        cout << "This is member # " << count << " and ID  is: " << id << endl;    }
 };
-int employee ::count=0;
+int employee ::count = 0;
 
 int main()
 {
@@ -34,6 +30,5 @@ int main()
     aniba.setdata();
     aniba.getdata();
 
-   
     return 0;
 }
