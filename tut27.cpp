@@ -1,50 +1,47 @@
 #include <iostream>
 using namespace std;
 class complex;
-
 class calculator
 {
-    public:
+public:
     int add(int a, int b)
     {
-        return( a+b);
+        return (a + b);
     }
-    int sumrealcomplex(complex, complex);
     int sumcompcomplex(complex, complex);
+    int sumrealcomplex(complex, complex);
 };
-class complex {
-    public:
-    int a ;
-    int b ;
-     int friend sumrealcomplex(complex ,complex);
-    int friend sumcompcomplex(complex ,complex);
-    void setdata(int a1, int b1){       
-        a=a1;
-        b=b1;
-
-    }
-    void printnumber()
+class complex
+{
+public:
+    int a;
+    int b;
+    int sumcompcomplex(complex, complex);
+    int sumrealcomplex(complex, complex);
+    void setdata(int n1, int n2)
     {
-        cout<<" Your complex number is "<<a<<"+"<<b<<"i"<<endl;
+        a = n1;
+        b = n2;
+        
     }
-
-
 };
-int calculator ::sumrealcomplex(complex o1, complex o2){
-    return (o1.a+o2.a);
+int calculator::sumcompcomplex(complex o1, complex o2)
+{
+    return (o1.a + o2.a);
 }
-int calculator ::sumcompcomplex(complex o1, complex o2){
-    return (o1.b+o2.b);
+int calculator::sumrealcomplex(complex o1, complex o2)
+{
+    return (o1.b + o2.b);
 }
 int main()
 {
+    complex o1, o2;
+    o1.setdata(1, 9);
+    o2.setdata(9, 1);
     calculator calc;
-    complex c1, c2;
-    c1.setdata(3, 4);
-    c2.setdata(1, 2);
-    int result = calc.sumrealcomplex(c1, c2);
-    cout << "Sum of real parts  of o1 and o2 is: " << result << endl;
-    result = calc.sumcompcomplex(c1, c2);
-    cout << "Sum of imaginary parts of o1 and o2 is: " << result << endl;
+    int res = calc.sumcompcomplex(o1, o2);
+    cout << "The complex part of o1 and o2 is :" << res<< endl;
+    res = calc.sumrealcomplex(o1, o2);
+    cout << "The real part of o1 and o2 is :" << res<< endl;
     return 0;
 }
