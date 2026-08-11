@@ -4,7 +4,7 @@ class B;
 class A
 {
     int val1;
-    friend void exchange(A &, B &);
+    friend void exchange(A & , B & );
 
 public:
     void setdata(int data)
@@ -19,7 +19,7 @@ public:
 class B
 {
     int val2;
-    friend void exchange(A &, B &);
+    friend void exchange(A & , B & );
 
 public:
     void setdata(int data)
@@ -31,7 +31,7 @@ public:
         cout << val2 << endl;
     }
 };
-void exchange(A &a, B &b)
+void exchange(A & a, B & b)
 {
     int tmp = a.val1;
     a.val1 = b.val2;
