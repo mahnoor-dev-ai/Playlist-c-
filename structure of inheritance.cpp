@@ -21,6 +21,9 @@ public:
     }
 
     int codelanguage = 78;
+    void getdata(){
+        cout<<ID<<endl;
+    }
 };
 
 int main() {
@@ -29,8 +32,11 @@ int main() {
     
     cout << amina.salary << endl;
     
-    programmer skillF(1);
+    programmer skillF(2344);
+    cout<<skillF.ID<<endl;
 
-    cout<<skillF.codelanguage;
+    cout<<skillF.codelanguage<<endl;
+    skillF.getdata();
+
     return 0;
 }
